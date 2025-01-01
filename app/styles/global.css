@@ -1,0 +1,162 @@
+@media screen {
+  * {
+    /* dynamic style */
+    --line-color: #1c2b4b;
+    --win-color: #458700;
+    --draw-color: #a8a9a2;
+    --loose-color: #D93C3C;
+    --light-color: #f2f4f7;
+    --dark-light: #617092ff;
+    --primary-color: #0a0e1a;
+    --secondary-color: #00eda1;
+    --tertiary-color: #6cd7ff;
+    --light-loose-color: #FF6B6B;
+    --tertiary-light-color: #66a6bd;
+    --primary-light-color: #121f38;
+    --primary-lighter-color: #0c1629;
+
+    --background-image: radial-gradient(
+        600px circle at 100% 10%,
+        rgba(59, 89, 152, 0.15),
+        transparent 90%
+      ),
+      radial-gradient(
+        400px circle at -2% 80%,
+        rgba(30, 144, 255, 0.15),
+        transparent 100%
+      ),
+      radial-gradient(
+        700px circle at 60% 90%,
+        rgba(30, 144, 255, 0.1),
+        transparent 60%
+      );
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* global-width */
+    --sidenav-width: 90px;
+    --termcard-height: 200px;
+    --sidenav-width-mobile: 70px;
+  }
+
+  /* ::-webkit-scrollbar {
+      display: none;
+    } */
+
+  body {
+    color: var(--light-color);
+    background-attachment: fixed;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font-poppins-light);
+    background-image: var(--background-image);
+  }
+
+
+  a,
+  router-link {
+    text-decoration: none;
+  }
+
+  input {
+    outline: none;
+  }
+
+  button {
+    outline: none;
+    border: none;
+  }
+
+  input:focus,
+  input:hover {
+    outline: none;
+  }
+
+  textarea {
+    flex: 1;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 4px;
+    background: transparent;
+  }
+
+  textarea::placeholder {
+    color: var(--light-color);
+  }
+
+  textarea:focus,
+  textarea:hover {
+    outline: none;
+    border-color: none;
+  }
+
+  select {
+    outline: none;
+  }
+}
+
+.skeleton {
+  cursor: progress;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color) 25%,
+    var(--primary-light-color) 50%,
+    var(--primary-color) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  background-image: var(--background-image);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--tertiary-color) var(--primary-color);
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary-color);
+  border-radius: 15px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--tertiary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* ipad pro screens & laptop */
+@media only screen and (min-width: 49em) and (max-width: 64em) {
+}
+
+/* large screens : Desktop and 4k screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+}
+
+/* 5k screens and above */
+@media only screen and (min-width: 91em) {
+}

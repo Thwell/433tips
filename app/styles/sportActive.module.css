@@ -1,0 +1,16 @@
+@media screen {
+  .sportActiveContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .sportActiveLayout {
+    width: 100%;
+
+  }
+}
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+}

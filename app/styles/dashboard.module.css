@@ -1,0 +1,93 @@
+@media screen {
+  .dashboardContainer {
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+  }
+
+  .dashboardLayout {
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    flex-direction: column;
+    border: 1px solid var(--line-color);
+    background-image: var(--background-image);
+  }
+
+  /* unauthorizedContainer */
+
+  .unauthorizedInfo {
+    gap: 10px;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .unauthorizedInfo h2,
+  .walletAccess h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+  }
+
+  .unauthorizedInfo p {
+    font-size: 0.8rem;
+  }
+
+  .formButton {
+    gap: 10px;
+    padding: 0 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    min-height: 50px;
+    max-height: 50px;
+    border-radius: 8px;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+  }
+
+  .formButton:hover {
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .dashboardContainer {
+    overflow: hidden;
+    overflow-y: hidden;
+  }
+
+
+  .dashboardLayout {
+    flex-direction: row;
+  }
+
+  .formButton {
+    padding: 0 100px;
+  }
+}
+
+/* ipad pro screens & laptop */
+@media only screen and (min-width: 49em) and (max-width: 64em) {
+}
+
+/* large screens : Desktop and 4k screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+}
+
+/* 5k screens and above */
+@media only screen and (min-width: 91em) {
+}

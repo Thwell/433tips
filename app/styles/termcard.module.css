@@ -1,0 +1,90 @@
+@media screen {
+  .termcardContainer {
+    gap: 10px;
+    display: flex;
+    padding: 10px 0;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    justify-content: flex-start;
+    scroll-snap-type: x mandatory;
+    min-height: var(--termcard-height);
+  }
+
+  .termcard {
+    gap: 10px;
+    flex-grow: 1;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    cursor: pointer;
+    min-width: 300px;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align: center;
+    border: 1px solid var(--line-color);
+    background-color: var(--primary-light-color);
+  }
+
+  .termcard:hover {
+    color: var(--primary-color);
+
+    background-color: var(--tertiary-color);
+  }
+
+  .termcard:hover .termcardTitle h3 {
+    color: var(--background-color);
+  }
+
+  .termcardActive {
+    background-color: var(--tertiary-color);
+  }
+
+  .termcardActive .termcardTitle h3 {
+    color: var(--primary-color);
+  }
+
+  .termcardActive .termcardTitle p {
+    color: var(--primary-color);
+  }
+
+  .termcardTitle {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .termcardTitle h3 {
+    font-size: 1rem;
+    color: var(--tertiary-color);
+    font-family: var(--font-poppins-light);
+  }
+
+  .termcardTitle p {
+    font-size: 1rem;
+    color: var(--background-light-color);
+    font-family: var(--font-poppins-extralight);
+  }
+}
+
+/* For larger devices */
+@media only screen and (min-width: 48em) {
+  .termcardContainer {
+    justify-content: space-between;
+  }
+}
+/* iPad Pro & Laptop screens */
+@media only screen and (min-width: 49em) and (max-width: 64em) {
+}
+
+/* Desktop and 4k screens */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+}
+
+/* 5k screens and above */
+@media only screen and (min-width: 91em) {
+}

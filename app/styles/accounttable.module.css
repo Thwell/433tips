@@ -1,0 +1,210 @@
+@media screen {
+  .tableWrapper {
+    overflow-x: auto;
+    overflow-y: auto;
+    border-radius: 15px;
+    height: fit-content;
+    color: var(--dark-light);
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  .tableHeader {
+    gap: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .copyContainer:first-child {
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+  }
+
+  .copyContainer:hover:first-child {
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+  }
+  .copyContainer,
+  .addContainer {
+    gap: 10px;
+    height: 50px;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: center;
+    text-transform: capitalize;
+    color: var(--tertiary-color);
+    font-family: var(--font-poppins-regular);
+    border: 1px solid var(--tertiary-color);
+  }
+
+  .copyIcon {
+    height: 20px;
+    width: 20px;
+  }
+
+  .copyContainer:hover,
+  .addContainer:hover {
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+  }
+
+  .dateInput {
+    height: 50px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    font-family: var(--font-poppins-regular);
+  }
+
+  .dateInput:hover {
+    background-color: var(--secondary-color);
+  }
+
+  .sportsTable {
+    border-collapse: collapse;
+    min-width: 1000px;
+    table-layout: fixed;
+  }
+
+  .tableWrapper tbody tr:nth-child(odd) {
+    background: var(--background-image);
+  }
+
+  .sportsTable th {
+    overflow: hidden;
+    text-align: center;
+    padding: 18px 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    background: var(--tertiary-color);
+    font-family: var(--font-poppins-light);
+  }
+
+  .sportsTable td {
+    width: 100%;
+    text-align: center;
+    padding: 18px 12px;
+    text-transform: capitalize;
+    font-family: var(--font-poppins-light);
+  }
+
+  .teamInner {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .toggleContainer {
+    gap: 10px;
+    height: 40px;
+    display: flex;
+    width: fit-content;
+    position: relative;
+    align-items: center;
+    padding-left: 10px;
+    cursor: pointer;
+    color: var(--tertiary-color);
+    background-image: var(--background-image);
+  }
+
+  .toggleThumb {
+    background-color: var(--tertiary-color);
+    border-radius: 360%;
+    position: relative;
+    height: 40px;
+    width: 40px;
+  }
+
+  .deleteIcon {
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--loose-color);
+  }
+
+  .editIcon {
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--tertiary-color);
+  }
+
+  .userContainer {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profileImg , .teamImage {
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 15px;
+    border: 4px solid var(--primary-light-color);
+  }
+
+  .circularShape {
+    border-radius: 360%;
+  }
+
+  .notLoading {
+    display: flex;
+    min-height: 600px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Tablet and larger devices (768px and up) */
+@media only screen and (min-width: 48em) {
+  .tableWrapper {
+    width: 100%;
+  }
+
+  .sportsTable {
+    width: 100%;
+  }
+
+  .sportsTable th {
+    padding: 18px 8px;
+  }
+
+  .tableRow td {
+    padding: 18px 8px;
+  }
+}
+
+/* iPad Pro screens & laptop (768px - 1024px) */
+@media only screen and (min-width: 49em) and (max-width: 64em) {
+  .sportsTable {
+    min-width: 900px;
+  }
+}
+
+/* Large screens: Desktop (1024px - 1440px) */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  .sportsTable {
+    min-width: 1000px;
+  }
+}
+
+/* 5k screens and above (1440px+) */
+@media only screen and (min-width: 91em) {
+  .sportsTable {
+    min-width: 1200px;
+  }
+}

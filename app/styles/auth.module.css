@@ -1,0 +1,361 @@
+@media screen {
+  .authComponent {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    overflow-y: auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-color);
+    background-image: var(--background-image);
+
+  }
+
+  .authComponentBgImage {
+    display: none;
+  }
+
+  .authWrapper {
+    padding: 10px;
+    display: flex;
+    width: 100%;
+  }
+
+
+  .formContainer {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 60px;
+    height: 100%;
+  }
+
+  .formLogo{
+    padding: 10px;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: center;
+    background-color: var(--primary-light-color);
+  }
+
+  .formHeader {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formHeader h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .formHeader p {
+    font-size: 1rem;
+  }
+
+  .authInput {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 15px;
+    align-items: center;
+    color: var(--light-color);
+    background-color: var(--primary-light-color);
+
+  }
+
+  .authInput:hover .authIcon {
+    color: var(--tertiary-color);
+  }
+
+  .authInput input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+    color: var(--light-color);
+
+  }
+
+  .authInput input:focus {
+    color: var(--light-color);
+    background-color: transparent;
+  }
+
+  .authInput input:-webkit-autofill,
+  .authInput input:-webkit-autofill:hover,
+  .authInput input:-webkit-autofill:focus,
+  .authInput input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: var(--light-color) !important;
+  }
+
+  .authInput input::placeholder {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    color: var(--light-color);
+  }
+
+  .authInput select {
+    width: 100%;
+    padding: 10px;
+    color: var(--light-color);
+    background-color: transparent;
+    border: none;
+  }
+
+  .dropdownContainer {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+
+  }
+
+  .dropdownContainer span {
+    font-size: 1rem;
+  }
+
+  .dropdownInput {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dropdownIcon {
+    font-size: 24px;
+  }
+
+  .dropdownArea {
+    gap: 10px;
+    top: 60px;
+    z-index: 99;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    max-height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    border-radius: 15px;
+    flex-direction: column;
+    background-color: var(--primary-light-color);
+  }
+
+  .dropdownArea span {
+    padding: 10px;
+  }
+
+  .dropdownArea span:hover {
+    border-radius: 15px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+  }
+
+  .errorText {
+    font-size: 0.8rem;
+    font-family: var(--font-poppins-light);
+    color: var(--tertiary-color);
+  }
+
+  .showBtn {
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .authIcon {
+    font-size: 24px;
+    color: var(--light-color);
+  }
+
+  .termsContainer {
+    gap: 10px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  .termsContainer input[type="checkbox"] {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 15px;
+    -webkit-appearance: button;
+    border: double 2px var(--light-color);
+    background-color: transparent;
+    color: var(--light-color);
+    white-space: nowrap;
+    overflow: hidden;
+    outline: none;
+    width: 20px;
+    height: 20px;
+  }
+
+  .termsContainer input[type="checkbox"]:checked {
+    background-color: transparent;
+    border-left-color: var(--light-color);
+    border-right-color: var(--light-color);
+  }
+
+  .termsContainer label {
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+
+  .formAuthButton {
+    gap: 10px;
+    width: 100%;
+    max-height: 50px;
+    min-height: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 15px;
+    color: var(--primary-color);
+    background-color: var(--light-color);
+  }
+
+  .activeFormAuthButton {
+    background-color: var(--tertiary-color);
+  }
+
+  .formAuthButton:hover {
+    background-color: var(--tertiary-color);
+  }
+
+  .formChange {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .formChange span {
+    font-size: .8rem;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .authBottomBtn p span {
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+
+  .formContainer h3 {
+    gap: 20px;
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btnLogin {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .btnLogin:hover {
+    background-color: var(--tertiary-color);
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .authComponent {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    overflow-y: auto;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .formContainer {
+    gap: 30px;
+  }
+
+  .authWrapper {
+    top: 0;
+    left: 0;
+    flex: 50%;
+    width: 100%;
+    height: 100%;
+    border: none;
+    transform: none;
+    padding: 0 30px;
+    border-radius: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    align-items: center;
+    backdrop-filter: none;
+    justify-content: center;
+    color: var(--light-color);
+    -webkit-backdrop-filter: none;
+    background-color: var(--primary-color);
+    background-image: var(--background-image);
+
+  }
+
+  .authComponentBgImage {
+    position: relative;
+    flex: 50%;
+    border-radius: 0;
+    align-items: flex-end;
+    height: 100%;
+    display: flex;
+    color: var(--light-color);
+    background-color: var(--primary-color);
+    background-image: var(--background-image);
+
+  }
+
+
+}
+
+/* ipad pro screens & laptop */
+@media only screen and (min-width: 49em) and (max-width: 64em) {
+  .authWrapper {
+    padding: 0 40px;
+  }
+}
+
+/* large screens : Desktop and 4k screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  .authWrapper {
+    padding: 0 50px;
+  }
+}
+
+/* 5k screens and above */
+@media only screen and (min-width: 91em) {
+  .authWrapper {
+    padding: 0 100px;
+  }
+}

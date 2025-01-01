@@ -1,0 +1,207 @@
+@media screen {
+  .paymentContainer {
+    gap: 10px;
+    display: flex;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .paymentContainer h1 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--font-poppins-regular);
+  }
+
+  .paymentLayout {
+    gap: 10px;
+    display: flex;
+    padding: 10px 0;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    justify-content: flex-start;
+    scroll-snap-type: x mandatory;
+  }
+
+  .paymentPaypalImage {
+    object-fit: contain;
+    width: 100%;
+    height: 100px;
+  }
+  
+
+  .payController {
+    gap: 10px;
+    flex-grow: 1;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    min-width: 300px;
+    text-align: center;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align: center;
+    background-color: transparent;
+    border: 1px solid var(--line-color);
+    background-color: var(--primary-lighter-color);
+
+  }
+
+  .authInput {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 15px;
+    align-items: center;
+    color: var(--light-color);
+    background-color: transparent;
+    background-color: var(--primary-color);
+    border: 1px solid var(--line-color);
+
+  }
+
+
+  .authInput input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+    color: var(--light-color);
+
+  }
+
+  .authInput input:focus {
+    color: var(--light-color);
+    background-color: transparent;
+  }
+
+  .authInput input:-webkit-autofill,
+  .authInput input:-webkit-autofill:hover,
+  .authInput input:-webkit-autofill:focus,
+  .authInput input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: var(--light-color) !important;
+  }
+
+  .authInput input::placeholder {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    color: var(--light-color);
+  }
+
+  .formContainer{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .paymentImageWp {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  .paymentImage {
+    object-fit: contain;
+  }
+
+  .btnPay {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 15px;
+    color: var(--tertiary-color);
+    background-color: transparent;
+    font-family: var(--font-outfit-light);
+    border: 1px solid var(--tertiary-color);
+  }
+
+  .btnPay:hover {
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+  }
+
+  .paymentManual {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: var(--primary-light-color);
+  }
+
+  .questionWrapper {
+    gap: 10px;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    flex-direction: column;
+    border: 1px solid var(--line-color);
+    background-color: var(--primary-lighter-color);
+
+    
+  }
+
+  .questionContainer {
+    gap: 10px;
+    display: flex;
+    color: var(--dark-light);
+    flex-direction: column;
+
+  }
+
+  .questionContainer h1 {
+    font-size: 1rem;
+    text-align: start;
+    color: var(--tertiary-color);
+    font-weight: var(--font-poppins-regular);
+  }
+
+  .questionContainer p span {
+    color: var(--tertiary-color);
+  }
+
+  .questionContainer p span a {
+    color: var(--tertiary-color);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .paymentContainer {
+    height: 100%;
+  }
+
+  .paymentLayout {
+    justify-content: space-between;
+  }
+
+  .payController {
+    min-width: 450px;
+  }
+
+}
+
+/* ipad pro screens & laptop */
+@media only screen and (min-width: 49em) and (max-width: 64em) {
+}
+
+/* large screens : Desktop and 4k screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+}
+
+/* 5k screens and above */
+@media only screen and (min-width: 91em) {
+}

@@ -1,0 +1,317 @@
+@media screen {
+  .formMain {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .formHeader {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    position: relative;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--line-color);
+    background-color: var(--primary-color);
+    background-image: var(--background-image);
+  }
+
+  .backButton {
+    cursor: pointer;
+    color: var(--light-color);
+  }
+
+  .backButtonIcon {
+    font-size: 30px;
+  }
+
+  .formHeader h1 {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: var(--font-poppins-extralight);
+  }
+
+  .formContainer {
+    gap: 20px;
+    display: flex;
+    padding: 15px;
+    border-radius: 15px;
+    flex-direction: column;
+    border: 1px solid var(--line-color);
+    background-image: var(--background-image);
+    background-color: var(--primary-light-color);
+  }
+
+  .formContainer h1 {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: var(--font-poppins-regular);
+  }
+
+  .formContainerInner {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formInputContainer,
+  .formInputWrapper {
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formInputContainer {
+    width: 100%;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+  }
+
+  .formInputContainer label,
+  .formInputWrapper label {
+    font-family: var(--font-poppins-extralight);
+    text-transform: capitalize;
+    color: var(--light-color);
+    text-wrap: nowrap;
+    font-size: 1rem;
+  }
+
+  .formInputContainer label {
+    display: flex;
+    align-items: center;
+  }
+
+  .formationInput {
+    gap: 10px;
+    display: flex;
+  }
+
+  .addButton {
+    gap: 15px;
+    width: 60px;
+    cursor: pointer;
+    font-size: 1rem;
+    max-height: 60px;
+    min-height: 60px;
+    border-radius: 15px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+  }
+
+  .addButton:hover {
+    background-color: var(--tertiary-light-color);
+  }
+
+  .addIcon {
+    font-size: 24px;
+    color: var(--primary-color);
+  }
+
+  .formationList {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .formationItem {
+    gap: 5px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    position: relative;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: center;
+    border: 1px solid var(--line-color);
+    background-image: var(--background-image);
+    background-color: var(--primary-light-color);
+  }
+
+  .formTeamWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .formTeamContainer {
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .formImageContainer {
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+  }
+
+  .formChangeUpload {
+    flex-grow: 1;
+    display: flex;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-lighter-color);
+  }
+
+  .searchResults {
+    top: 120px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    z-index: 999;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 350px;
+    overflow-x: hidden;
+    position: absolute;
+    border-radius: 20px;
+    flex-direction: column;
+    color: var(--light-color);
+    border: 1px solid var(--line-color);
+    background-color: var(--primary-light-color);
+  }
+
+  .searchResults span {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .searchResults span {
+    padding: 10px;
+  }
+
+  .searchResults span:hover {
+    border-radius: 8px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+  }
+
+  .imageUploaded {
+    border: none;
+  }
+
+  .IdImage {
+    border-radius: inherit;
+  }
+
+  .CameraIcon {
+    font-size: 24px;
+    color: var(--dark-light);
+  }
+
+  .inputField {
+    width: 100%;
+    border: none;
+    height: 60px;
+    outline: none;
+    padding: 15px;
+    border-radius: 15px;
+    color: var(--dark-light);
+    background-color: var(--primary-lighter-color);
+  }
+
+  .inputField:-webkit-autofill,
+  .inputField:-webkit-autofill:hover,
+  .inputField:-webkit-autofill:focus,
+  .inputField:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: var(--dark-light) !important;
+  }
+
+  .inputField::placeholder {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    color: var(--dark-light);
+  }
+
+  .formToggleContainer {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .submitButton {
+    gap: 15px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    max-height: 60px;
+    min-height: 60px;
+    border-radius: 15px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+  }
+
+  .submitButton:hover {
+    background-color: var(--secondary-color);
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .formMain {
+    align-items: center;
+  }
+
+  .formChangeUpload {
+    height: 150px;
+    border-radius: 15px;
+  }
+
+  .CameraIcon {
+    font-size: 32px;
+  }
+
+  .formContainer,
+  .formHeader {
+    width: 80%;
+  }
+
+  .formImageContainer {
+    flex-direction: row;
+    background-color: transparent;
+  }
+}
+
+/* ipad pro screens & laptop */
+@media only screen and (min-width: 49em) and (max-width: 64em) {
+  .formContainer,
+  .formHeader {
+    width: calc(100% / 2);
+  }
+}
+
+/* large screens : Desktop and 4k screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  .formContainer,
+  .formHeader {
+    width: calc(100% / 2);
+  }
+}
+
+/* 5k screens and above */
+@media only screen and (min-width: 91em) {
+  .formContainer,
+  .formHeader {
+    width: calc(100% / 2);
+  }
+}

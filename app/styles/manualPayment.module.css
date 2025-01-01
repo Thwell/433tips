@@ -1,0 +1,54 @@
+@media screen {
+  .manualContainer {
+    gap: 20px;
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    flex-direction: column;
+    color: var(--dark-light);
+    border: 1px solid var(--line-color);
+    background-image: var(--background-image);
+    
+  }
+
+  .manualContainer h3 {
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--line-color);
+    font-family: var(--font-poppins-regular);
+  }
+
+  .methodItem {
+    display: flex;
+    margin: 0 10px;
+    flex-direction: column;
+  }
+
+  .instructionsList span {
+    list-style: none;
+    color: var(--tertiary-color);
+  }
+
+  .instructionsList li {
+    list-style: none;
+    
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+}
+
+/* ipad pro screens & laptop */
+@media only screen and (min-width: 49em) and (max-width: 64em) {
+}
+
+/* large screens : Desktop and 4k screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+}
+
+/* 5k screens and above */
+@media only screen and (min-width: 91em) {
+}

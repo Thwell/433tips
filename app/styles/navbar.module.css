@@ -1,0 +1,263 @@
+@media screen {
+  .navMain {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+
+  }
+
+  .navContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    justify-content: space-between;
+  }
+
+  .navContainerLeft {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menuIcon {
+    font-size: 40px;
+  }
+
+  .menuIcon:hover {
+    color: var(--tertiary-color);
+  }
+
+  .navContainerTop {
+    gap: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    width: 60px;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .searchContainer {
+    gap: 10px;
+    top: 100px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid var(--line-color);
+  }
+
+  .searchIcon {
+    font-size: 24px;
+    color: var(--dark-light);
+  }
+
+  .searchInput {
+    width: 100%;
+    border: none;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    color: var(--dark-light);
+    background-color: transparent;
+  }
+
+  .desktopSearch {
+    display: none;
+  }
+
+  .mobileSearch {
+    display: flex;
+  }
+
+  .searchInput::placeholder {
+    font-size: 0.8rem;
+    color: var(--dark-light);
+  }
+
+  .userSection {
+    gap: 10px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .userProfile {
+    gap: 4px;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+  }
+
+  .userProfileInfo {
+    display: flex;
+  }
+
+  .userProfileInfo h1 {
+    font-size: 1rem;
+    color: var(--light-color);
+    font-family: var(--font-outfit-light);
+  }
+
+  .userProfileInfo span {
+    color: var(--tertiary-color);
+    font-family: var(--font-outfit-light);
+  }
+  
+
+  .profileImg {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 15px;
+    object-position: center;
+    border: 4px solid var(--line-color);
+  }
+
+  .notificationContainer {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .notificationContainer:hover .notificationIcon {
+    color: var(--tertiary-color);
+  }
+
+  .notificationIcon {
+    font-size: 32px;
+  }
+  
+
+  .activeNotification .notificationIcon {
+    color: var(--tertiary-color);
+  }
+
+
+
+  .notificationStatus  {
+    position: relative;
+  }
+
+  .notificationStatus span {
+    top: -1px;
+    right: -3px;
+    font-size: .8rem;
+    position: absolute;
+    color: var(--tertiary-color);
+    font-family: var(--font-outfit-light);
+  }
+
+  .userButton {
+    gap: 5px;
+    width: fit-content;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    max-height: 40px;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: center;
+    color: var(--primary-color);
+    font-family: var(--font-outfit-medium);
+  }
+
+  .userButton:hover {
+    background-color: var(--tertiary-color);
+  }
+
+  .userButton span {
+    font-size: .9rem;
+    font-weight: var(--font-outfit-light);
+  }
+  .userIcon {
+    font-size: 20px;
+    color: var(--primary-color);
+  }
+
+  .btnContainer {
+    gap: 10px;
+    height: 40px;
+    display: flex;
+    padding: 4px;
+    cursor: pointer;
+    min-width: 40px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    background-color: var(--light-color);
+  }
+
+  .logoutBtn {
+    display: none;
+  }
+
+  .logutNavIcon {
+    color: var(--primary-color);
+  }
+
+  .btnContainer:hover {
+    color: var(--light-color);
+    background-color: var(--tertiary-color);
+  }
+
+  .btnContainer:hover .logutNavIcon {
+    color: var(--light-color);
+  }
+
+  .btnContainer:hover .navIcon {
+    color: var(--light-color);
+  }
+
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .navMain {
+    padding: 0;
+  }
+
+  .logo {
+    width: 40px;
+  }
+
+  .userSection {
+    width: auto;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+
+  .desktopSearch {
+    display: flex;
+  }
+
+  .mobileSearch {
+    display: none;
+  }
+
+  .logoutBtn {
+    display: flex;
+  }
+}

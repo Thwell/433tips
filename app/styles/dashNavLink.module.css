@@ -1,0 +1,48 @@
+@media screen {
+  .dashLinkContainer {
+    gap: 30px;
+    display: flex;
+    padding: 10px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 15px;
+    justify-content: space-evenly;
+    border: 1px solid var(--line-color);
+  }
+
+  .dashLink {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dashlinkIcon {
+    font-size: 24px;
+    color: var( --dark-light);
+  }
+
+  .dashlinkIcon:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
+  }
+
+  .dashLinkActive .dashlinkIcon {
+    color: var(--secondary-color);
+  }
+}
+
+/* For larger devices */
+@media only screen and (min-width: 48em) {
+}
+/* iPad Pro & Laptop screens */
+@media only screen and (min-width: 49em) and (max-width: 64em) {
+}
+
+/* Desktop and 4k screens */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+}
+
+/* 5k screens and above */
+@media only screen and (min-width: 91em) {
+}

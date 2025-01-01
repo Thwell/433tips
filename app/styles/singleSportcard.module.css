@@ -1,0 +1,233 @@
+@media screen {
+  .cardContainer {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    position: relative;
+    height: fit-content;
+    border-radius: 15px;
+    background-image: var(--background-image);
+    border: 1px solid var(--line-color);
+
+  }
+
+  .cardDrop {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    border-radius: inherit;
+    filter: brightness(70%);
+    justify-content: space-evenly;
+  }
+
+  .cardWrapperGlassmorphism {
+    width: 100%;
+    border-radius: inherit;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .backButton {
+    left: 0;
+    cursor: pointer;
+    padding: 15px 10px;
+    position: absolute;
+  }
+
+  .backButtonIcon {
+    font-size: 30px;
+  }
+
+  .backButtonIcon:hover {
+    color: var(--tertiary-color);
+  }
+
+  .cardWrapper {
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border-radius: inherit;
+    flex-direction: column;
+    text-transform: capitalize;
+    justify-content: space-between;
+  }
+
+
+  .leagueInfo {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 15px 15px ;
+    background-image: var(--background-image);
+    border: 1px solid var(--line-color);
+    border-top: 0;
+
+  }
+
+  .leagueInfo h1 {
+    font-size: 0.9rem;
+    font-family: var(--font-outfit-extralight);
+  }
+
+  .cardStatus {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: var(--shadow-background-color);
+  }
+
+  .cardStatus span {
+    font-size: 1rem;
+    color: var(--loose-color);
+    text-transform: capitalize;
+    font-family: var(--font-outfit-extralight);
+  }
+
+  .cardMiddle {
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    overflow-x: auto;
+    padding: 20px 4px;
+    overflow-y: hidden;
+    justify-content: space-between;
+  }
+
+  .teamContainer {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .teamContainer h1 {
+    font-family: var(--font-outfit-medium);
+    color: var(--tertiary-color);
+    font-size: 1.2rem;
+  }
+
+  .teamInner {
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .teamInner h2 {
+    font-size: 1rem;
+    text-align: center;
+    font-family: var(--font-outfit-extralight);
+  }
+
+  .circularShape {
+    border-radius: 360%;
+  }
+
+  .matchInfo {
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .matchInfo h1 {
+    font-size: 1rem;
+    font-family: var(--font-outfit-extralight);
+  }
+
+  .matchInfo h3 {
+    font-size: 1rem;
+    font-family: var(--font-outfit-extralight);
+  }
+
+  .tipContainer {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .tipContainer h2 {
+    font-size: 1rem;
+    font-family: var(--font-outfit-extralight);
+  }
+
+  .tipContainer h4 {
+    font-size: 1rem;
+    color: var(--tertiary-color);
+    font-family: var(--font-outfit-extralight);
+  }
+
+
+}
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .cardContainer {
+    width: 100%;
+
+  }
+
+  .cardWrapper {
+    width: 100%;
+  }
+
+  .cardWrapperGlassmorphism {
+    padding: 0 100px;
+  }
+
+  .leagueInfo {
+    width:100%;
+  }
+
+  .teamImage {
+    height: 120px;
+    width: 120px;
+  }
+
+  .formation {
+    gap: 10px;
+  }
+
+  .teamInner h2 {
+    font-size: 1.2rem;
+  }
+
+  .teamContainer h1 {
+    font-size: 1.6rem;
+  }
+
+  .formationCircle {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+
+  .teamCardImage {
+    height: 200px;
+    width: 200px;
+  }
+}

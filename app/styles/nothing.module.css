@@ -1,0 +1,59 @@
+@media screen {
+
+
+  .emptyState {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    min-height: auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--dark-light);
+
+  }
+
+  .emptyState p {
+    text-transform: lowercase;
+  }
+
+  .emptyStateImage {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+  
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+
+
+  .emptyState {
+    min-height: 500px;
+
+  }
+  
+  .emptyStateImage {
+    height: 250px;
+  }
+
+
+  
+}
+
+/* ipad pro screens & laptop */
+@media only screen and (min-width: 49em) and (max-width: 64em) {
+
+}
+
+/* large screens : Desktop and 4k screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+ 
+}
+
+/* 5k screens and above */
+@media only screen and (min-width: 91em) {
+
+}

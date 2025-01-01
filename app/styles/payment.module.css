@@ -1,0 +1,243 @@
+@media screen {
+  .paymentContainer {
+    gap: 20px;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+  }
+
+  .paymentHeader {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 15px;
+    flex-direction: column;
+    border: 1px solid var(--line-color);
+  }
+
+  .paymentHeader h1 {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--light-color);
+    text-decoration: underline;
+    font-family: var(--font-outfit-thin);
+  }
+
+  .paymentHeader h1 span {
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    font-family: var(--font-outfit-extralight);
+  }
+
+  .searchDropdownWrapper {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    flex-direction: column;
+    border: 1px solid var(--line-color);
+    background-color: var(--primary-light-color);
+
+  }
+
+  .dropdownContainer {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    background-image: var(--background-image);
+    border: 1px solid var(--line-color);
+
+  }
+
+  .dropdownContainer span {
+    font-size: 1rem;
+  }
+
+  .dropdownInput {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dropdownIcon {
+    font-size: 24px;
+  }
+
+  .dropdownArea {
+    top: 60px;
+    z-index: 99;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    max-height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    border-radius: 15px;
+    flex-direction: column;
+    color: var(--light-color);
+    border: 1px solid var(--line-color);
+    background-color: var(--primary-light-color);
+  }
+
+  .dropdownArea span {
+    padding: 10px;
+  }
+
+  .dropdownArea span:hover {
+    border-radius: 15px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+  }
+
+  .searchContainer {
+    gap: 10px;
+    top: 100px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    border-radius: 15px;
+    background: transparent;
+    background-image: var(--background-image);
+    border: 1px solid var(--line-color);
+  
+  }
+
+  .searchIcon {
+    font-size: 24px;
+    color: var(--light-color);
+  }
+
+  .searchInput {
+    width: 100%;
+    border: none;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    color: var(--light-color);
+    background-color: transparent;
+  }
+
+  .searchInput::placeholder {
+    color: var(--light-color);
+  }
+
+  .paymentSection {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+  .payCardInner{
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .payCard {
+    flex-grow: 1;
+    height: 250px;
+    display: flex;
+    text-align: center;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: var(--background-image);
+    border: 1px solid var(--line-color);
+  }
+
+  .payCard h1 {
+    padding: 10px;
+    font-size: 1.4rem;
+    width: fit-content;
+    border-radius: 15px  0 15px 0 ;
+    font-family: var(--font-outfit-thin);
+    background-image: var(--background-image);
+
+  }
+
+  .paymentInfo {
+    gap: 4px;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .paymentInfo h2 {
+    font-size: 2rem;
+    font-family: var(--font-outfit-regular);
+  }
+
+  .paymentInfo span:first-child {
+    bottom: 10px;
+    font-size: 1.2rem;
+    position: relative;
+    font-family: var(--font-outfit-thin);
+  }
+
+  .paymentInfo span:last-child {
+    top: 10px;
+    font-size: 1.2rem;
+    position: relative;
+    font-family: var(--font-outfit-thin);
+  }
+
+  .chooseButton {
+    height: 60px;
+    cursor: pointer;
+    border-radius: 15px;
+    background: transparent;
+    color: var(--tertiary-color);
+    border: 1px solid var(--tertiary-color);
+  }
+
+  .chooseButton:hover {
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .paymentHeader h1 {
+    font-size: 1rem;
+    text-align: start;
+  }
+}
+
+/* ipad pro screens & laptop */
+@media only screen and (min-width: 49em) and (max-width: 64em) {
+}
+
+/* large screens : Desktop and 4k screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+}
+
+/* 5k screens and above */
+@media only screen and (min-width: 91em) {
+}
