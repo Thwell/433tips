@@ -10,7 +10,7 @@ import EmptySportImg from "@/public/assets/emptySport.png";
 import { usePredictionStore } from "@/app/store/Prediction";
 import { useSearchParams, usePathname, useRouter } from "next/navigation";
 
-export default function otherSport() {
+export default function OtherSport() {
   const emptyCardCount = 20;
   const router = useRouter();
   const pathname = usePathname();
