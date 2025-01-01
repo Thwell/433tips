@@ -115,7 +115,7 @@ export default function RootLayout({ children }) {
         <Script
           id="ga-tag"
           strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-DWYY7ECRV7"
+          src="https://www.googletagmanager.com/gtag/js?id=G-47C54HY3HD"
         />
         <Script
           id="google-analytics"
@@ -125,7 +125,7 @@ export default function RootLayout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-DWYY7ECRV7', {
+            gtag('config', 'G-47C54HY3HD', {
               page_path: window.location.pathname,
             });
           `}
