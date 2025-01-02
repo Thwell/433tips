@@ -120,7 +120,7 @@ export default function Vip() {
       <AuthPrompt
         message="Join VIP to access accurate tips"
         buttonText="Join VIP"
-        onClick={() => router.push("/payment")}
+        onClick={() => router.push("payment")}
       />
     );
   }
